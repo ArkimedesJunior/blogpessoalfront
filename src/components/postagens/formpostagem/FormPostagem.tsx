@@ -75,7 +75,7 @@ function FormPostagem() {
     useEffect(() => {
         setPostagem({
             ...postagem,
-            tema: tema,
+            tema: {id:tema.id, descricao: tema.descricao},
         })
     }, [tema])
 
